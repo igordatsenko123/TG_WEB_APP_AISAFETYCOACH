@@ -44,24 +44,25 @@
 
     .top-buttons {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
       margin: 30px 0 10px;
-      gap: 12px;
-      width: 90%;
-      max-width: 320px;
+      width: 100%;
+      max-width: 400px;
     }
 
-    .button {
+    .button-link {
       background-color: #1a1a1a;
       color: #fff;
       border: 1px solid #333;
       border-radius: 12px;
-      padding: 10px 20px;
-      flex: 1 1 40%;
+      padding: 10px 14px;
       text-align: center;
-      font-size: 14px;
-      min-width: 120px;
+      font-size: 13px;
+      min-width: 80px;
+      text-decoration: none;
+      flex: 1 1 calc(25% - 12px);
     }
 
     .menu {
@@ -82,17 +83,13 @@
       width: 100%;
       text-align: center;
       font-size: 15px;
+      text-decoration: none;
+      color: #fff;
     }
 
-    @media (max-width: 400px) {
-      .button {
-        min-width: 100px;
-        font-size: 13px;
-      }
-
-      .menu-button {
-        font-size: 14px;
-      }
+    .button-link:hover,
+    .menu-button:hover {
+      background-color: #2a2a2a;
     }
   </style>
 </head>
@@ -100,20 +97,20 @@
   <div class="header">
     <img src="logo.jpg" class="avatar" alt="Avatar" />
     <div class="title">AI Safety Coach</div>
-    <div class="subtitle">1 subscriber</div>
+    <div class="subtitle">1 Bln subscribers </div>
   </div>
 
   <div class="top-buttons">
-    <div class="button">live stream</div>
-    <div class="button">mute</div>
-    <div class="button">search</div>
-    <div class="button">more</div>
+    <a href="https://www.youtube.com/watch?v=xAR6N9N8e6U" class="button-link" target="_blank">live stream</a>
+    <a href="https://www.facebook.com/glibziuzin" class="button-link" target="_blank">mute</a>
+    <a href="https://www.linkedin.com/in/glib-ziuzin-7a24b7241/" class="button-link" target="_blank">search</a>
+    <a href="https://rt.pornhub.com/" class="button-link" target="_blank">more</a>
   </div>
 
   <div class="menu">
-    <div class="menu-button">Administrators</div>
-    <div class="menu-button">Subscribers</div>
-    <div class="menu-button">Channel Settings</div>
+    <a href="https://www.linkedin.com/in/igor-datsenko-787a553/" class="menu-button" target="_blank">Administrators</a>
+    <a href="https://www.linkedin.com/in/viacheslav-levchenko-9287508/" class="menu-button" target="_blank">Subscribers</a>
+    <a href="https://www.youtube.com/watch?v=HB3l1BPi7zo" class="menu-button" target="_blank">Channel Settings</a>
   </div>
 </body>
 </html>
