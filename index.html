@@ -4,8 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AI Safety Coach</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
@@ -45,24 +46,28 @@
     .top-buttons {
       display: flex;
       justify-content: center;
-      gap: 10px;
-      flex-wrap: wrap;
+      gap: 12px;
       margin: 30px 0 10px;
-      width: 100%;
-      max-width: 400px;
+      flex-wrap: wrap;
     }
 
     .button-link {
       background-color: #1a1a1a;
       color: #fff;
       border: 1px solid #333;
-      border-radius: 12px;
-      padding: 10px 14px;
-      text-align: center;
-      font-size: 13px;
-      min-width: 80px;
+      border-radius: 14px;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       text-decoration: none;
-      flex: 1 1 calc(25% - 12px);
+    }
+
+    .button-link svg {
+      width: 28px;
+      height: 28px;
+      stroke: #fff;
     }
 
     .menu {
@@ -97,14 +102,14 @@
   <div class="header">
     <img src="logo.jpg" class="avatar" alt="Avatar" />
     <div class="title">AI Safety Coach</div>
-    <div class="subtitle">1 Bln subscribers </div>
+    <div class="subtitle">1 Bln subscribers</div>
   </div>
 
   <div class="top-buttons">
-    <a href="https://www.youtube.com/watch?v=xAR6N9N8e6U" class="button-link" target="_blank">live stream</a>
-    <a href="https://www.facebook.com/glibziuzin" class="button-link" target="_blank">mute</a>
-    <a href="https://www.linkedin.com/in/glib-ziuzin-7a24b7241/" class="button-link" target="_blank">search</a>
-    <a href="https://rt.pornhub.com/" class="button-link" target="_blank">more</a>
+    <a href="https://www.youtube.com/watch?v=xAR6N9N8e6U" class="button-link" target="_blank"><i data-lucide="tv"></i></a>
+    <a href="https://www.facebook.com/glibziuzin" class="button-link" target="_blank"><i data-lucide="bell-off"></i></a>
+    <a href="https://www.linkedin.com/in/glib-ziuzin-7a24b7241/" class="button-link" target="_blank"><i data-lucide="search"></i></a>
+    <a href="https://rt.pornhub.com/" class="button-link" target="_blank"><i data-lucide="more-horizontal"></i></a>
   </div>
 
   <div class="menu">
@@ -112,5 +117,9 @@
     <a href="https://www.linkedin.com/in/viacheslav-levchenko-9287508/" class="menu-button" target="_blank">Subscribers</a>
     <a href="https://www.youtube.com/watch?v=HB3l1BPi7zo" class="menu-button" target="_blank">Channel Settings</a>
   </div>
+
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 </html>
