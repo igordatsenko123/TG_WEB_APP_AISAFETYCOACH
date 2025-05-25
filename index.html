@@ -9,64 +9,108 @@
   <style>
     body {
       margin: 0;
+      padding: 0;
       background-color: #000;
       color: #fff;
       font-family: 'Inter', sans-serif;
-      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
+
     .header {
-      padding: 20px;
+      text-align: center;
+      margin-top: 30px;
     }
+
     .avatar {
       width: 100px;
       height: 100px;
-      border-radius: 20px;
+      border-radius: 24px;
+      object-fit: cover;
       margin-bottom: 10px;
     }
+
     .title {
-      font-size: 22px;
+      font-size: 20px;
       font-weight: 600;
     }
-    .top-buttons, .menu-buttons {
-      display: flex;
-      justify-content: space-around;
-      padding: 20px;
-      flex-wrap: wrap;
+
+    .subtitle {
+      font-size: 14px;
+      color: #bbb;
+      margin-top: 4px;
     }
+
+    .top-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 30px 0 10px;
+      gap: 12px;
+      width: 90%;
+      max-width: 320px;
+    }
+
     .button {
       background-color: #1a1a1a;
+      color: #fff;
       border: 1px solid #333;
       border-radius: 12px;
-      padding: 10px 16px;
-      margin: 8px;
+      padding: 10px 20px;
       flex: 1 1 40%;
-      max-width: 120px;
+      text-align: center;
+      font-size: 14px;
+      min-width: 120px;
     }
-    .button:hover {
-      background-color: #2a2a2a;
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin-top: 20px;
+      width: 90%;
+      max-width: 360px;
     }
+
     .menu-button {
       background-color: #111;
-      padding: 14px;
-      margin: 8px;
+      padding: 14px 20px;
       border-radius: 10px;
       border: 1px solid #444;
+      width: 100%;
+      text-align: center;
+      font-size: 15px;
+    }
+
+    @media (max-width: 400px) {
+      .button {
+        min-width: 100px;
+        font-size: 13px;
+      }
+
+      .menu-button {
+        font-size: 14px;
+      }
     }
   </style>
 </head>
 <body>
   <div class="header">
-    <img src="https://via.placeholder.com/100" class="avatar" alt="Avatar" />
+    <img src="logo.jpg" class="avatar" alt="Avatar" />
     <div class="title">AI Safety Coach</div>
-    <div>1 subscriber</div>
+    <div class="subtitle">1 subscriber</div>
   </div>
+
   <div class="top-buttons">
     <div class="button">live stream</div>
     <div class="button">mute</div>
     <div class="button">search</div>
     <div class="button">more</div>
   </div>
-  <div class="menu-buttons">
+
+  <div class="menu">
     <div class="menu-button">Administrators</div>
     <div class="menu-button">Subscribers</div>
     <div class="menu-button">Channel Settings</div>
