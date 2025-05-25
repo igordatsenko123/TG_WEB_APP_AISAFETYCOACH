@@ -134,6 +134,23 @@
 
   <script>
     lucide.createIcons();
+
+    // Динамическая версия для ресурсов (img, css, js)
+    const version = new Date().getTime();
+    const addVersion = (selector, attr) => {
+      document.querySelectorAll(selector).forEach(el => {
+        let current = el.getAttribute(attr);
+        if (current && !current.includes('?v=')) {
+          el.setAttribute(attr, current + `?v=${version}`);
+        }
+      });
+    };
+
+    window.addEventListener('DOMContentLoaded', () => {
+      addVersion('img', 'src');
+      addVersion('link[rel="stylesheet"]', 'href');
+      addVersion('script[src]', 'src');
+    });
   </script>
 </body>
 </html>
