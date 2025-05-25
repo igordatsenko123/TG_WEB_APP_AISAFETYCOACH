@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Safety Coach</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      text-align: center;
+    }
+    .header {
+      padding: 20px;
+    }
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+    .title {
+      font-size: 22px;
+      font-weight: 600;
+    }
+    .top-buttons, .menu-buttons {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+      flex-wrap: wrap;
+    }
+    .button {
+      background-color: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 12px;
+      padding: 10px 16px;
+      margin: 8px;
+      flex: 1 1 40%;
+      max-width: 120px;
+    }
+    .button:hover {
+      background-color: #2a2a2a;
+    }
+    .menu-button {
+      background-color: #111;
+      padding: 14px;
+      margin: 8px;
+      border-radius: 10px;
+      border: 1px solid #444;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="https://via.placeholder.com/100" class="avatar" alt="Avatar" />
+    <div class="title">AI Safety Coach</div>
+    <div>1 subscriber</div>
+  </div>
+  <div class="top-buttons">
+    <div class="button">live stream</div>
+    <div class="button">mute</div>
+    <div class="button">search</div>
+    <div class="button">more</div>
+  </div>
+  <div class="menu-buttons">
+    <div class="menu-button">Administrators</div>
+    <div class="menu-button">Subscribers</div>
+    <div class="menu-button">Channel Settings</div>
+  </div>
+</body>
+</html>
