@@ -61,7 +61,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      text-decoration: none;
+      cursor: pointer;
     }
 
     .button-link svg {
@@ -88,8 +88,8 @@
       width: 100%;
       text-align: center;
       font-size: 15px;
-      text-decoration: none;
       color: #fff;
+      cursor: pointer;
     }
 
     .button-link:hover,
@@ -106,16 +106,30 @@
   </div>
 
   <div class="top-buttons">
-    <a href="https://www.youtube.com/watch?v=xAR6N9N8e6U" class="button-link" target="_blank"><i data-lucide="tv"></i></a>
-    <a href="https://www.facebook.com/glibziuzin" class="button-link" target="_blank"><i data-lucide="bell-off"></i></a>
-    <a href="https://www.linkedin.com/in/glib-ziuzin-7a24b7241/" class="button-link" target="_blank"><i data-lucide="search"></i></a>
-    <a href="https://rt.pornhub.com/" class="button-link" target="_blank"><i data-lucide="more-horizontal"></i></a>
+    <div class="button-link" onclick="Telegram.WebApp.openLink('https://www.youtube.com/watch?v=xAR6N9N8e6U')">
+      <i data-lucide="tv"></i>
+    </div>
+    <div class="button-link" onclick="Telegram.WebApp.openLink('https://www.facebook.com/glibziuzin')">
+      <i data-lucide="bell-off"></i>
+    </div>
+    <div class="button-link" onclick="Telegram.WebApp.openLink('https://www.linkedin.com/in/glib-ziuzin-7a24b7241/')">
+      <i data-lucide="search"></i>
+    </div>
+    <div class="button-link" onclick="Telegram.WebApp.openLink('https://rt.pornhub.com/')">
+      <i data-lucide="more-horizontal"></i>
+    </div>
   </div>
 
   <div class="menu">
-    <a href="https://www.linkedin.com/in/igor-datsenko-787a553/" class="menu-button" target="_blank">Administrators</a>
-    <a href="https://www.linkedin.com/in/viacheslav-levchenko-9287508/" class="menu-button" target="_blank">Subscribers</a>
-    <a href="https://www.youtube.com/watch?v=HB3l1BPi7zo" class="menu-button" target="_blank">Channel Settings</a>
+    <div class="menu-button" onclick="Telegram.WebApp.openLink('https://www.linkedin.com/in/igor-datsenko-787a553/')">
+      Administrators
+    </div>
+    <div class="menu-button" onclick="Telegram.WebApp.openLink('https://www.linkedin.com/in/viacheslav-levchenko-9287508/')">
+      Subscribers
+    </div>
+    <div class="menu-button" onclick="Telegram.WebApp.openLink('https://www.youtube.com/watch?v=HB3l1BPi7zo')">
+      Channel Settings
+    </div>
   </div>
 
   <script>
