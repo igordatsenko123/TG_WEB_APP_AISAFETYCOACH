@@ -96,6 +96,55 @@
     .menu-button:hover {
       background-color: #2a2a2a;
     }
+
+    /* ✅ Адаптация под маленькие экраны */
+    @media (max-width: 400px) {
+      .avatar {
+        width: 80px;
+        height: 80px;
+      }
+
+      .title {
+        font-size: 18px;
+      }
+
+      .subtitle {
+        font-size: 13px;
+      }
+
+      .button-link {
+        width: 50px;
+        height: 50px;
+      }
+
+      .button-link svg {
+        width: 22px;
+        height: 22px;
+      }
+
+      .menu-button {
+        font-size: 14px;
+        padding: 12px;
+      }
+    }
+
+    .back-button {
+      margin: 30px 0;
+    }
+
+    .back-button button {
+      background-color: #222;
+      color: #fff;
+      border: 1px solid #444;
+      border-radius: 10px;
+      padding: 12px 24px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .back-button button:hover {
+      background-color: #333;
+    }
   </style>
 </head>
 <body>
@@ -130,6 +179,10 @@
     <div class="menu-button" onclick="Telegram.WebApp.openLink('https://www.youtube.com/watch?v=HB3l1BPi7zo')">
       Channel Settings
     </div>
+  </div>
+
+  <div class="back-button">
+    <button onclick="Telegram.WebApp.close()">← Назад</button>
   </div>
 
   <script>
